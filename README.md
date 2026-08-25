@@ -29,6 +29,14 @@ Follow the training from start to finish to build skills in Git/GitLab (versioni
 - Official GitLab documentation: https://docs.gitlab.com/
 - xavki's blog: https://xavki.blog/
 
+## Utils
+
+```
+docker inspect gitlab
+docker logs -f gitlab
+docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
+```
+
 ## Status
 
 In progress — repo updated as I move through the tutorial.
