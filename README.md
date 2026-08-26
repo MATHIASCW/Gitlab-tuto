@@ -35,6 +35,7 @@ Follow the training from start to finish to build skills in Git/GitLab (versioni
 docker inspect gitlab
 docker logs -f gitlab
 docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
+cat ~./ssh/Key
 ```
 
 ## Status
