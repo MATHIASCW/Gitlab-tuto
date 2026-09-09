@@ -21,6 +21,10 @@ Follow the training from start to finish to build skills in Git/GitLab (versioni
 ## Repository structure
 
 ```
+.
+├── README.md                  # This file
+├── docker-compose.yml         # Self-hosted GitLab instance (Docker)
+
 ```
 
 ## Resources
