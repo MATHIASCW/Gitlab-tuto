@@ -36,10 +36,12 @@ Follow the training from start to finish to build skills in Git/GitLab (versioni
 ## Utils
 
 ```
+docker compose up -d
 docker inspect gitlab
 docker logs -f gitlab
 docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 cat ~/.ssh/Key
+docker exec -it gitlab-runner gitlab-runner register  --url http://gitlab.example.com:80  --token
 ```
 
 ## Status
