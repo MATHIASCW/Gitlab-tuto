@@ -23,7 +23,7 @@ Follow the training from start to finish to build skills in Git/GitLab (versioni
 ```
 .
 ├── README.md                  # This file
-├── docker-compose.yml         # Self-hosted GitLab instance (Docker)
+├── docker-compose.yml         # Self-hosted GitLab instance and runner pipeline CI/ CD (Docker)
 
 ```
 
@@ -33,6 +33,7 @@ Follow the training from start to finish to build skills in Git/GitLab (versioni
 - Official GitLab documentation: https://docs.gitlab.com/
 - xavki's blog: https://xavki.blog/
 
+
 ## Utils
 
 ```
@@ -41,7 +42,8 @@ docker inspect gitlab
 docker logs -f gitlab
 docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 cat ~/.ssh/Key
-docker exec -it gitlab-runner gitlab-runner register  --url http://gitlab.example.com:80  --token
+docker exec -it gitlab-runner gitlab-runner register  --url http://gitlab.example.com:80  --token TOKKEN
+
 ```
 
 ## Status
